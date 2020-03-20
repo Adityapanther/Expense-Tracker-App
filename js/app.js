@@ -3,5 +3,9 @@ const totalIncome = document.getElementsByName('totalIncome');
 const HouseRents = document.getElementsByName('HouseRents')
 const education = document.getElementsByName('education');
 const other = document.getElementsByName('other');
-const totalIncome = document.getElementsByName('totalIncome');
 const calculateBtn = document.getElementById('calculateBtn');
+
+
+function show(){
+    console.log(totalIncome.value);
+}
