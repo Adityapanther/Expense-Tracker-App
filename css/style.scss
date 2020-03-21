@@ -7,21 +7,23 @@
 
 .wrapper{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0px 30px 0px;
 
     .container{
         width: 25%;
-        height: 90%;
+        height: 95%;
         background-color: white;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         padding-top: 10px;
         border-radius: 3px;
+        padding-bottom: 20px;
 
         .screen-box{
             width: 90%;
@@ -98,4 +100,55 @@
 
 .marmin{
     margin-top: 1em;
+}
+
+
+@media(max-width: 1080px){
+    .wrapper{
+        .container {
+            width: 30%;
+        }
+    }
+}
+
+
+@media(max-width: 960px) {
+    .wrapper {
+        .container {
+            width: 35%;
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .wrapper {
+        .container {
+            width: 40%;
+        }
+    }
+}
+
+
+@media(max-width: 730px) {
+    .wrapper {
+        .container {
+            width: 60%;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .wrapper {
+        .container {
+            width: 75%;
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .wrapper {
+        .container {
+            width: 95%;
+        }
+    }
 }
