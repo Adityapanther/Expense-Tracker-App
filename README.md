@@ -1,4 +1,4 @@
-# Expense-Tracker-App
+# Expense-Tracker-App Ui in responsive Design
 
 # Live Preview
 
