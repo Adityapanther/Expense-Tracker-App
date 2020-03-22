@@ -1,14 +1,23 @@
 const display = document.getElementById('screen');
-const totalIncome = document.getElementById('totalIncome');
-const HouseRents = document.getElementById('HouseRents')
-const education = document.getElementById('education');
-const other = document.getElementById('other');
+const totalIncome = document.getElementById('totalIncome').value;
+const HouseRents = document.getElementById('houseRents').value;
+const education = document.getElementById('education').value;
+const other = document.getElementById('other').value;
 const calculateBtn = document.getElementById('calculateBtn');
 
-console.log("hello");
 
-calculateBtn.addEventListener('click', ()=>{
-   console.log(totalIncome.value);
+calculateBtn.addEventListener('click',(event) => {
+   event.preventDefault();
+   console.log("hi");
    
-    
-})
+
+});
+
+function calculation(){
+   let expense = HouseRents + education + other
+   let result = totalIncome + expense
+   display.innerHTML = result
+
+   console.log(result);
+   
+}
